@@ -109,7 +109,7 @@ export default function SignupPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-2 text-muted-foreground"
           >
-            Sign up for a new DataLinc account
+            Sign up for a new Datalinc account
           </motion.p>
         </div>
 

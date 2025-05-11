@@ -101,7 +101,7 @@ export default function LoginPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-2 text-muted-foreground"
           >
-            Sign in to your DataLinc account
+            Sign in to your Datalinc account
           </motion.p>
         </div>
 

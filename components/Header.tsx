@@ -20,10 +20,10 @@ export default function Header() {
           </Link>
           <nav className="flex items-center space-x-4 mr-4">
             <Button variant="ghost" asChild>
-              <Link href="/services">Services</Link>
+              <Link href="#services">Services</Link>
             </Button>
             <Button variant="ghost" asChild>
-              <Link href="/contact">Contact</Link>
+              <Link href="#contact">Contact</Link>
             </Button>
             <Button asChild>
               <Link href="/login">Login</Link>

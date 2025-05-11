@@ -33,7 +33,7 @@ const services = [
 
 export default function About() {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-background/95 mx-4">
+    <section id="about" className="py-24 bg-gradient-to-b from-background to-background/95 mx-4">
       <div className="container max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
