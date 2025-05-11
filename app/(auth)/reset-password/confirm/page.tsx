@@ -3,6 +3,7 @@
 import { useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
+import Link from 'next/link';
 
 function ResetPasswordConfirmContent() {
   const searchParams = useSearchParams();
@@ -30,9 +31,9 @@ function ResetPasswordConfirmContent() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background/95">
       <div className="w-full max-w-md space-y-8 p-8 rounded-lg border bg-card/50 backdrop-blur-sm">
         <div className="text-center">
-          <a href="/" className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+          <Link href="/" className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
             Datalinc.io
-          </a>
+          </Link>
           <h2 className="text-2xl font-bold mt-4">Confirming your request...</h2>
           <p className="mt-2 text-sm text-muted-foreground">You are being redirected to confirm your password reset.</p>
         </div>
