@@ -3,37 +3,42 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 const services = [
   {
     title: "Custom Software Development",
     description: "Tailored solutions that solve your unique business challenges with cutting-edge technology.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format",
-    alt: "Code on computer screen"
+    alt: "Code on computer screen",
+    link: "/software-development"
   },
   {
     title: "Web Development",
     description: "Beautiful, responsive websites that engage your audience and drive conversions.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1920&auto=format",
-    alt: "Web design mockup"
+    image: "/images/outdooroasis.png",
+    alt: "Outdoor oasis screenshot",
+    link: "/web-development"
   },
   {
     title: "SaaS Solutions",
     description: "Cloud-based software that scales with your business and delivers value to your customers.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format",
-    alt: "Cloud computing concept"
+    image: "/images/customisedresume.png",
+    alt: "Customising resume app",
+    link: "/saas-development"
   }, 
   {
     title: "Data Analysis",
     description: "Extract insights from your data to drive informed decisions and growth.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1920&auto=format",
-    alt: "Data analysis"
+    image: "/images/turbinedata.png",
+    alt: "Turbine data",
+    link: "/data-analysis"
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-background to-background/95 mx-4">
+    <section id="services" className="py-24 bg-gradient-to-b from-background to-background/95 mx-4">
       <div className="container max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -69,12 +74,14 @@ export default function About() {
               >
                 <Card className="overflow-hidden border-0 bg-background/40 backdrop-blur h-full">
                   <div className="relative h-48 overflow-hidden">
+                    <Link href={service.link}>
                     <Image
                       src={service.image}
                       alt={service.alt}
                       fill
                       className="object-cover transition-transform hover:scale-105"
                     />
+                    </Link>
                   </div>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

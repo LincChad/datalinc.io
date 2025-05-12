@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo/Logo";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -28,12 +29,16 @@ export default function Hero() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
+              <Link href="/#contact">
               <Button size="lg" className="rounded-full">
                 Get Started
               </Button>
+              </Link>
+              <Link href="/#services">
               <Button size="lg" variant="outline" className="rounded-full">
                 View Our Work
               </Button>
+              </Link>
             </div>
           </motion.div>
 
