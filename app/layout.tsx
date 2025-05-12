@@ -6,8 +6,28 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Datalinc",
-  description: "Data-driven solutions for modern businesses",
+  title: "Datalinc | Data-driven solutions for modern businesses",
+  description: "Data-driven solutions for modern businesses. We build custom software solutions for businesses, from desktop to mobile, with a focus on security and scalability.",
+  openGraph: {
+    title: "Datalinc | Data-driven solutions for modern businesses",
+    description: "Data-driven solutions for modern businesses. We build custom software solutions for businesses, from desktop to mobile, with a focus on security and scalability.",
+    url: "https://datalinc.com.au",
+    images: [
+      {
+        url: "/images/datalincLogoOG.png",
+        width: 1200,
+        height: 630,
+        alt: "Datalinc Software Development",
+      },
+    ],
+    siteName: "Datalinc",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Datalinc | Data-driven solutions for modern businesses",
+    description: "Data-driven solutions for modern businesses",
+    images: ["/images/datalincLogoOG.png"],
+  },
 };
 
 export default function RootLayout({

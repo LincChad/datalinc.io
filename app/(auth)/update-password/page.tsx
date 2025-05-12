@@ -113,14 +113,14 @@ export default function UpdatePasswordPage() {
         className="w-full max-w-md space-y-8 p-8 rounded-lg border bg-card/50 backdrop-blur-sm"
       >
         <div className="text-center">
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
           >
             Update Password
-          </motion.h2>
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

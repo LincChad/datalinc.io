@@ -1,8 +1,8 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Reset Password | DataLinc",
-  description: "Reset your DataLinc account password",
+  title: "Reset Password | Datalinc",
+  description: "Reset your Datalinc account password to get access to all of our services",
 }
 
 export default function ResetPasswordLayout({
