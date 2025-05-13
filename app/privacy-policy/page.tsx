@@ -1,6 +1,24 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Privacy Policy | Datalinc",
+  description: "Privacy Policy for Datalinc",
+  openGraph: {
+    title: "Privacy Policy | Datalinc",
+    description: "Privacy Policy for Datalinc",
+    url: "https://datalinc.com.au/privacy-policy",
+    images: ["/images/datalincLogoOG.png"],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Datalinc",
+    description: "Privacy Policy for Datalinc",
+    images: ["/images/datalincLogoOG.png"],
+  },
+};
 export default function PrivacyPolicy() {
   return (
     <>

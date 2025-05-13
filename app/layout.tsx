@@ -21,6 +21,7 @@ export const metadata: Metadata = {
       },
     ],
     siteName: "Datalinc",
+    type: "website"
   },
   twitter: {
     card: "summary_large_image",

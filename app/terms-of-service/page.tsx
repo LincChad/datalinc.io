@@ -1,6 +1,26 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Datalinc",
+  description: "Terms of Service for Datalinc",
+  openGraph: {
+    title: "Terms of Service | Datalinc",
+    description: "Terms of Service for Datalinc",
+    url: "https://datalinc.com.au/terms-of-service",
+    images: ["/images/datalincLogoOG.png"],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Datalinc",
+    description: "Terms of Service for Datalinc",
+    images: ["/images/datalincLogoOG.png"],
+  },
+};
+
 export default function TermsOfService() {
   return (
     <>
